@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bali — Island of Gods</title>
+  <meta name="description" content="Discover Bali — the Island of Gods. Explore sacred temples, emerald rice terraces, pristine beaches, and a vibrant culture unlike any other." />
+  <meta property="og:title" content="Bali — Island of Gods" />
+  <meta property="og:description" content="A premium travel guide to Bali, Indonesia." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Petal Canvas -->
+  <canvas id="petal-canvas" aria-hidden="true"></canvas>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home">BALI</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#destinations" class="nav-link">Destinations</a></li>
+        <li><a href="#experiences" class="nav-link">Experiences</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#tips" class="nav-link">Tips</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Plan Trip</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to Indonesia</p>
+      <h1 class="hero-title">Bali<span class="hero-dash"> — </span>Island&nbsp;of&nbsp;Gods</h1>
+      <p class="hero-sub">Where ancient temples breathe, rice terraces shimmer in gold light,<br class="d-none-sm" /> and the ocean calls your soul home.</p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn btn-primary">Explore Bali</a>
+        <a href="#about" class="btn btn-ghost">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about" class="section bg-cream">
+    <div class="container">
+      <div class="about-inner reveal">
+        <div class="about-text">
+          <p class="eyebrow">The Island</p>
+          <h2>A Place Beyond the Ordinary</h2>
+          <p class="lead">Bali is not a destination — it is a state of grace. Cradled between volcanic peaks and the Indian Ocean, this jewel of Indonesia pulses with a living spirituality that touches every stone, every rice field, every amber sunset.</p>
+          <p>Here, the sacred and the sensory are inseparable. Offerings of frangipani and incense perfume the morning air. Gamelan music drifts through temple courtyards at dusk. Healers, artists, surfers, and seekers have all arrived — and few have ever truly wanted to leave.</p>
+          <a href="#destinations" class="btn btn-outline">Discover Destinations</a>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1598324789736-4861f89564a0?w=700&q=80" alt="Balinese ceremony" loading="lazy" />
+          <div class="about-badge">
+            <span class="badge-num">20,000+</span>
+            <span class="badge-label">Temples</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DESTINATIONS ══ -->
+  <section id="destinations" class="section bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow eyebrow-light">Explore</p>
+        <h2 class="text-light">Top Destinations</h2>
+        <p class="section-sub text-muted">Six iconic places that define the Balinese spirit</p>
+      </div>
+      <div class="dest-grid">
+
+        <article class="dest-card reveal">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1562553552-a3f0a22fedb6?w=700&q=80" alt="Ubud" loading="lazy" />
+            <span class="dest-tag">Cultural Heart</span>
+          </div>
+          <div class="dest-body">
+            <h3>Ubud</h3>
+            <p>Bali's creative soul — galleries, rice terraces, healing retreats, and the sacred Monkey Forest deep in the jungle highlands.</p>
+            <a href="#contact" class="dest-link">Plan visit →</a>
+          </div>
+        </article>
+
+        <article class="dest-card reveal">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&q=80" alt="Seminyak" loading="lazy" />
+            <span class="dest-tag">Beach & Lifestyle</span>
+          </div>
+          <div class="dest-body">
+            <h3>Seminyak</h3>
+            <p>Chic beach clubs, world-class dining, and sunsets painted in shades of tangerine and rose over a vast stretch of dark sand.</p>
+            <a href="#contact" class="dest-link">Plan visit →</a>
+          </div>
+        </article>
+
+        <article class="dest-card reveal">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=700&q=80" alt="Uluwatu" loading="lazy" />
+            <span class="dest-tag">Clifftop Drama</span>
+          </div>
+          <div class="dest-body">
+            <h3>Uluwatu</h3>
+            <p>A clifftop sea temple 70 meters above the waves — witness the hypnotic Kecak fire dance as the sun sinks into the ocean.</p>
+            <a href="#contact" class="dest-link">Plan visit →</a>
+          </div>
+        </article>
+
+        <article class="dest-card reveal">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=700&q=80" alt="Kuta" loading="lazy" />
+            <span class="dest-tag">Surf & Energy</span>
+          </div>
+          <div class="dest-body">
+            <h3>Kuta</h3>
+            <p>Bali's legendary surf coast — long rolling waves, vibrant nightlife, and a sunset strip that never stops moving.</p>
+            <a href="#contact" class="dest-link">Plan visit →</a>
+          </div>
+        </article>
+
+        <article class="dest-card reveal">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=700&q=80" alt="Nusa Penida" loading="lazy" />
+            <span class="dest-tag">Wild Island</span>
+          </div>
+          <div class="dest-body">
+            <h3>Nusa Penida</h3>
+            <p>Dramatic cliff edges, secret coves, and manta ray encounters await on this rugged offshore island southeast of Bali.</p>
+            <a href="#contact" class="dest-link">Plan visit →</a>
+          </div>
+        </article>
+
+        <article class="dest-card reveal">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=700&q=80" alt="Tegallalang" loading="lazy" />
+            <span class="dest-tag">UNESCO Heritage</span>
+          </div>
+          <div class="dest-body">
+            <h3>Tegallalang</h3>
+            <p>Step-carved rice paddies cascade down volcanic hillsides — a living tapestry of the ancient Subak cooperative irrigation system.</p>
+            <a href="#contact" class="dest-link">Plan visit →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCES ══ -->
+  <section id="experiences" class="section bg-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Immerse Yourself</p>
+        <h2>Unforgettable Experiences</h2>
+        <p class="section-sub">Every moment in Bali writes a story</p>
+      </div>
+      <div class="exp-grid">
+
+        <div class="exp-card reveal">
+          <div class="exp-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 36c2-4 6-8 10-10l4 8-6 6-8-4z" fill="currentColor" opacity=".2"/><path d="M8 40L42 8M42 8H28M42 8V22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="32" r="4" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <h3>Surfing</h3>
+          <p>Ride world-class breaks at Kuta, Canggu, and Uluwatu — perfect for all levels, from your first wave to expert barrels.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4l4 8h8l-6 5 2 8-8-5-8 5 2-8-6-5h8z" fill="currentColor" opacity=".2"/><path d="M24 4l4 8h8l-6 5 2 8-8-5-8 5 2-8-6-5h8L24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M24 28v12M18 44h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Temple Tours</h3>
+          <p>Walk through centuries of Hindu devotion at Besakih, Tanah Lot, and Tirta Empul — where every stone tells a sacred story.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 36C14 28 24 36 34 28l6 8H4z" fill="currentColor" opacity=".2"/><path d="M4 36C14 28 24 36 34 28M10 36l4-16M24 36l2-20M38 36l-4-16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Rice Terrace Treks</h3>
+          <p>Trek through Tegallalang's shimmering green steps at dawn — a meditative journey through one of earth's most beautiful landscapes.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="20" r="10" fill="currentColor" opacity=".15"/><path d="M24 6a14 14 0 100 28A14 14 0 0024 6z" stroke="currentColor" stroke-width="2.5"/><path d="M24 20c-4 0-6 2-6 6M24 20c4 0 6 2 6 6M24 6v4M24 34v4M10 20H6M42 20h-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Spa & Wellness</h3>
+          <p>Ancient Balinese healing rituals — flower baths, volcanic stone massages, and chakra-balancing treatments in jungle sanctuaries.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 32l8-8 8 8 8-12 8 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/><path d="M16 38l-2 4M32 38l2 4M12 42h24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Nightlife</h3>
+          <p>From rooftop bars above rice fields to world-famous beach clubs — Bali's evenings pulse with a magic all their own.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 18h24v20H12z" fill="currentColor" opacity=".15"/><path d="M8 18h32M12 18V12a4 4 0 014-4h16a4 4 0 014 4v6M12 38v4M36 38v4M12 26h4v4h-4zM22 26h4v4h-4zM32 26h4v4h-4z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Cooking Classes</h3>
+          <p>Visit a morning market, then craft authentic Balinese cuisine — fragrant bumbu spice pastes, satay, and black rice pudding.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GALLERY ══ -->
+  <section id="gallery" class="section bg-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow eyebrow-light">Visual</p>
+        <h2 class="text-light">Glimpses of Paradise</h2>
+        <p class="section-sub text-muted">Every frame a reason to book your flight</p>
+      </div>
+      <div class="gallery-masonry">
+        <div class="gallery-col">
+          <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1573790387438-4da905039392?w=600&q=80" alt="Tegenungan Waterfall" loading="lazy" /></div>
+          <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?w=600&q=80" alt="Tanah Lot" loading="lazy" /></div>
+          <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1592364395653-83e648b20cc2?w=600&q=80" alt="Bali landscape" loading="lazy" /></div>
+        </div>
+        <div class="gallery-col">
+          <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali temple" loading="lazy" /></div>
+          <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1598324789736-4861f89564a0?w=600&q=80" alt="Balinese dancer" loading="lazy" /></div>
+          <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&q=80" alt="Mount Batur" loading="lazy" /></div>
+        </div>
+        <div class="gallery-col">
+          <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=600&q=80" alt="Rice terraces" loading="lazy" /></div>
+          <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80" alt="Uluwatu cliff" loading="lazy" /></div>
+          <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=600&q=80" alt="Nusa Penida" loading="lazy" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TRAVEL TIPS ══ -->
+  <section id="tips" class="section bg-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Before You Go</p>
+        <h2>Essential Travel Tips</h2>
+        <p class="section-sub">Everything you need to know for a seamless journey</p>
+      </div>
+      <div class="tips-grid">
+
+        <div class="tip-card reveal">
+          <div class="tip-num">01</div>
+          <div class="tip-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2"/><path d="M20 10v10l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Best Time to Visit</h3>
+          <p><strong>April – October</strong> is the dry season — warm days, clear skies, and calm seas. May and June offer the ideal balance of perfect weather and fewer crowds before peak season.</p>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-num">02</div>
+          <div class="tip-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="10" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M14 20h12M20 14v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Currency</h3>
+          <p>The <strong>Indonesian Rupiah (IDR)</strong> is the local currency. ATMs are widely available. Exchange money at authorized money changers and avoid street touts offering "special rates."</p>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-num">03</div>
+          <div class="tip-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 8C14 8 10 14 10 20c0 7 8 14 10 14s10-7 10-14c0-6-4-12-10-12z" stroke="currentColor" stroke-width="2"/><path d="M10 20h20M20 8c-3 4-4 8-4 12s1 8 4 12M20 8c3 4 4 8 4 12s-1 8-4 12" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Language</h3>
+          <p><strong>Bahasa Indonesia</strong> is the official language; <strong>Balinese</strong> is spoken locally. English is widely understood in tourist areas. A warm "Suksma" (thank you in Balinese) will always earn a smile.</p>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-num">04</div>
+          <div class="tip-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="16" width="28" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M12 16V12a8 8 0 0116 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="24" r="2" fill="currentColor"/></svg>
+          </div>
+          <h3>Getting Around</h3>
+          <p>Rent a <strong>scooter</strong> for freedom (international license needed), hire a <strong>private driver</strong> for day trips, or use <strong>Grab</strong> (Southeast Asia's Uber) for convenient city rides.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact" class="section bg-hero">
+    <div class="contact-overlay"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="contact-inner">
+        <div class="contact-text reveal">
+          <p class="eyebrow eyebrow-light">Get in Touch</p>
+          <h2 class="text-light">Plan Your Dream Trip</h2>
+          <p class="text-muted" style="margin-top:1rem;line-height:1.8;">Tell us when you want to travel, and we'll craft a Bali experience tailored entirely to your soul. Every detail handled — from jungle retreats to temple ceremonies.</p>
+          <div class="contact-facts">
+            <div class="fact">
+              <span class="fact-num">10+</span>
+              <span class="fact-label">Years Expertise</span>
+            </div>
+            <div class="fact">
+              <span class="fact-num">4.9★</span>
+              <span class="fact-label">Traveller Rating</span>
+            </div>
+            <div class="fact">
+              <span class="fact-num">50k+</span>
+              <span class="fact-label">Happy Guests</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="travel-date">Preferred Travel Date</label>
+            <input type="date" id="travel-date" name="travel_date" />
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us Your Dream</label>
+            <textarea id="message" name="message" rows="4" placeholder="I'd love to experience the rice terraces at sunrise, a cooking class, and a traditional ceremony..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send My Enquiry</button>
+          <p class="form-note">We respond within 24 hours.</p>
+          <div class="form-success" id="form-success" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Your message has been sent — we'll be in touch soon!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="footer-logo" href="#home">BALI</a>
+          <p>The Island of Gods awaits.<br/>Let us guide you there.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#about">About Bali</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#tips">Travel Tips</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social-wrap">
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            </a>
+          </div>
+          <p class="footer-contact-email"><a href="mailto:hello@bali-gods.com">hello@bali-gods.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Bali — Island of Gods. All rights reserved.</p>
+        <p class="footer-attr">Crafted with love for the Island</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
